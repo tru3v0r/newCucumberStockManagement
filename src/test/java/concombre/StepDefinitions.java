@@ -11,6 +11,15 @@ import org.opentestfactory.util.ParameterService;
 
 public class StepDefinitions {
 
+    @Given("blabla")
+    public void blabla() {
+    }
+
+    @When("bloublou")
+    public void bloublou() {
+
+    }
+
     @Then("The subtraction is correct")
     public void i_ve_at_least_number_products_in_stock(int expected) throws ParameterException {
         int var1 = ParameterService.INSTANCE.getInt("CUF_VAR1");
