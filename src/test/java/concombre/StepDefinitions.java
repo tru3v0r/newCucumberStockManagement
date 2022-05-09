@@ -22,7 +22,7 @@ public class StepDefinitions {
     }
 
     @Then("The subtraction is correct")
-    public void the_subtraction_is_correct(int expected) throws ParameterException {
+    public void the_subtraction_is_correct() throws ParameterException {
         int var1 = ParameterService.INSTANCE.getInt("TC_CUF_VAR1");
         int var2 = ParameterService.INSTANCE.getTestInt("TC_CUF_VAR2");
         int res = ParameterService.INSTANCE.getGlobalInt("TC_CUF_RES");
