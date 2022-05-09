@@ -56,6 +56,12 @@
             <artifactId>junit-jupiter</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.opentestfactory.util</groupId>
+            <artifactId>opentestfactory-java-param-library</artifactId>
+            <version>1.0.0.RC1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -77,4 +83,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>squashTF</id>
+            <name>squashTF</name>
+            <url>http://repo.squashtest.org/maven2/releases/</url>
+        </repository>
+    </repositories>
 </project>
