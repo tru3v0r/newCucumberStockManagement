@@ -23,9 +23,9 @@ public class StepDefinitions {
 
     @Then("The subtraction is correct")
     public void the_subtraction_is_correct() throws ParameterException {
-        int var1 = (int) ParameterService.INSTANCE.getInt("TC_CUF_VAR1");
-        int var2 = (int) ParameterService.INSTANCE.getTestInt("TC_CUF_VAR2");
-        int res = (int) ParameterService.INSTANCE.getGlobalInt("TC_CUF_RES");
+        float var1 = (float) ParameterService.INSTANCE.getInt("TC_CUF_VAR1");
+        float var2 = (float) ParameterService.INSTANCE.getTestInt("TC_CUF_VAR2");
+        float res = (float) ParameterService.INSTANCE.getGlobalInt("TC_CUF_RES");
         Assertions.assertEquals(res, var1 + var2, "Wrong calculation result");
     }
 
