@@ -16,7 +16,7 @@ public class StepDefinitions {
         int var1 = ParameterService.INSTANCE.getInt("CUF_VAR1");
         int var2 = ParameterService.INSTANCE.getTestInt("CUF_VAR2");
         int res = ParameterService.INSTANCE.getGlobalInt("CUF_RES");
-        Assertions.assertEquals(res, var1 - var2, "Wrong calculation result");
+        Assertions.assertEquals(res, var1 + var2, "Wrong calculation result");
     }
 
 }
