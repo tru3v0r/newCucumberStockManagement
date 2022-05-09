@@ -13,18 +13,19 @@ public class StepDefinitions {
 
     @Given("blabla")
     public void blabla() {
+        int i = 1;
     }
 
     @When("bloublou")
     public void bloublou() {
-
+        int i = 1;
     }
 
     @Then("The subtraction is correct")
     public void i_ve_at_least_number_products_in_stock(int expected) throws ParameterException {
-        int var1 = ParameterService.INSTANCE.getInt("CUF_VAR1");
-        int var2 = ParameterService.INSTANCE.getTestInt("CUF_VAR2");
-        int res = ParameterService.INSTANCE.getGlobalInt("CUF_RES");
+        int var1 = ParameterService.INSTANCE.getInt("TC_CUF_VAR1");
+        int var2 = ParameterService.INSTANCE.getTestInt("TC_CUF_VAR2");
+        int res = ParameterService.INSTANCE.getGlobalInt("TC_CUF_RES");
         Assertions.assertEquals(res, var1 + var2, "Wrong calculation result");
     }
 
