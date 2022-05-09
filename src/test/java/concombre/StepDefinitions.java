@@ -26,7 +26,7 @@ public class StepDefinitions {
         int var1 = ParameterService.INSTANCE.getInt("TC_CUF_VAR1");
         int var2 = ParameterService.INSTANCE.getInt("TC_CUF_VAR2");
         int res =  ParameterService.INSTANCE.getInt("TC_CUF_RES");
-        System.out.printl("Calculation result: var1 + var2 = res: " + var1 + " + " + var2 + " = " + res);
+        //System.out.printl("Calculation result: var1 + var2 = res: " + var1 + " + " + var2 + " = " + res);
         Assertions.assertEquals(res, var1 + var2, "Wrong calculation result");
     }
 
